@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorly.com</title>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/Css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<h2>Create Account</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Nombre del Estudiante</label>
+			<input type="text" placeholder="Doña florinda" id="nomEstudiantes"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Id del Estudiante</label>
+			<input type="text" placeholder="ID" id="idEstudiantes" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+        <div><label for="username">Periodos</label>
+        <select id= "numPeriodos" onchange="mostrar()" class="form-select" aria-label="Default select example">
+            <option selected>Ingrese el numero de periodos</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+
+        <div id="render">
+        </div>
+        <button class="btn btn-primary mt-2" type="button" onclick="repetirAlumnos()">Mostrar Datos</button>
+		<button type="text">Cargar  Datos</button>
+       
+        <h3 id="respuesta" class="text-center fw-light"></h3>
+	</form>
+</div>
+
+    <script src="JS/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+ 
+</html>
